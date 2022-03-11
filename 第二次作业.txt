@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+ <meta charset="UTF-8">
+ <script type="text/javascript" src="plapla.js"></script>
+ <title>吃豆人</title>
+</head>
+<body>
+    <h3>操控 □ 吃掉所有 △  </h3>
+    <h3>W: 向上   A:向左   S:向下    D:向右</h3>
+    <canvas id="canvas" width="600" height="600"></canvas>
+    <script type="text/javascript" language=JavaScript charset="UTF-8">
+           
+               setInterval("draw()",100);
+
+               document.onkeydown=function(event){
+                     var e = event || window.event || arguments.callee.caller.arguments[0];
+                     if(e && e.keyCode==87){ 
+                         w();
+                       }
+                     if(e && e.keyCode==65){ 
+                         
+                        a();
+                        }            
+                     if(e && e.keyCode==68){
+                         d();
+                    }
+                    if(e && e.keyCode==83){ 
+                         s();
+                    }
+
+                }; 
+    </script>
+</body>
+</html>
